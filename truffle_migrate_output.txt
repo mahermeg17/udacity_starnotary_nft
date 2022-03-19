@@ -1,0 +1,210 @@
+truffle migrate --reset --network rinkeby
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+WARNING: Ganache forking only supports EIP-1193-compliant providers. Legacy support for send is currently enabled, but will be removed in a future version _without_ a breaking change. To remove this warning, switch to an EIP-1193 provider. This error is probably caused by an old version of Web3's HttpProvider (or ganache < v7)
+
+eth_getBlockByNumber
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 29970676 (0x1c950f4)
+
+
+1_initial_migration.js
+======================
+eth_accounts
+net_version
+eth_getBlockByNumber
+eth_getBlockByNumber
+net_version
+eth_getBlockByNumber
+eth_estimateGas
+
+   Deploying 'Migrations'
+   ----------------------
+net_version
+eth_blockNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0xa9755950bd159ae2aa73dc8be7a7317a7c1b10754577169cb017efe0fa6f7548
+  Contract created: 0x7d92a58b084be10752482965a04f505412c30804
+  Gas usage: 274484
+  Block number: 10352549
+  Block time: Sat Mar 19 2022 09:02:03 GMT+0100 (heure normale d’Europe centrale)
+
+eth_getTransactionReceipt
+eth_subscribe
+eth_getCode
+eth_getTransactionByHash
+eth_getBlockByNumber
+eth_getBalance
+   > block number:        10352549
+   > block timestamp:     1647676923
+   > account:             0x301F0CB7dC1b39D182588492128d5c7eAdb66d6f
+   > balance:             0.159973663615656808
+   > gas used:            274484 (0x43034)
+   > gas price:           5 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00137242 ETH
+
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0xeedea68930d330ff0d43f0e83385c54355000a49c02087b330c34f417832f595
+  Gas usage: 45938
+  Block number: 10352550
+  Block time: Sat Mar 19 2022 09:02:03 GMT+0100 (heure normale d’Europe centrale)
+
+eth_getTransactionReceipt
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_subscribe
+   -------------------------------------
+   > Total cost:          0.00137242 ETH
+
+eth_getBlockByNumber
+
+2_deploy_contracts.js
+=====================
+eth_accounts
+net_version
+eth_getBlockByNumber
+eth_getBlockByNumber
+net_version
+eth_getBlockByNumber
+eth_estimateGas
+
+   Deploying 'StarNotary'
+   ----------------------
+net_version
+eth_blockNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x0f201b55e7f0644338bd74699ba8170df8a88ba3e0f5a7b48e778a60458ca53d
+  Contract created: 0x93f975dc277a17c1b0b7615b988272d07fa2bbb1
+  Gas usage: 2809800
+  Block number: 10352551
+  Block time: Sat Mar 19 2022 09:02:05 GMT+0100 (heure normale d’Europe centrale)
+
+eth_getTransactionReceipt
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_subscribe
+eth_getCode
+eth_getTransactionByHash
+eth_getBlockByNumber
+eth_getBalance
+   > block number:        10352551
+   > block timestamp:     1647676925
+   > account:             0x301F0CB7dC1b39D182588492128d5c7eAdb66d6f
+   > balance:             0.145694973615656808
+   > gas used:            2809800 (0x2adfc8)
+   > gas price:           5 gwei
+   > value sent:          0 ETH
+   > total cost:          0.014049 ETH
+
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x519cf4815548da7cbdae6eff529d0eb8c1358a502dc02965a0924338f6c8a64d
+  Gas usage: 28838
+  Block number: 10352552
+  Block time: Sat Mar 19 2022 09:02:06 GMT+0100 (heure normale d’Europe centrale)
+
+eth_getTransactionReceipt
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_subscribe
+   -------------------------------------
+   > Total cost:            0.014049 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.01542142 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 29999943 (0x1c9c347)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x8735125289fb223a0663ef6a0b9d0783cf4b40006aa120599fb60eabbdc5f8b6
+   > Blocks: 1            Seconds: 16
+   > contract address:    0x7D92A58b084Be10752482965a04F505412C30804
+   > block number:        10352555
+   > block timestamp:     1647677138
+   > account:             0x301F0CB7dC1b39D182588492128d5c7eAdb66d6f
+   > balance:             0.159973663615656808
+   > gas used:            274484 (0x43034)
+   > gas price:           5 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00137242 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00137242 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'StarNotary'
+   ----------------------
+   > transaction hash:    0xd95262a6eefa8be7827675ef02bb7e7edd80d4abb02145310dda003fbe271b43
+   > Blocks: 1            Seconds: 12
+   > contract address:    0x93f975dC277A17C1b0b7615b988272D07fa2BBB1
+   > block number:        10352557
+   > block timestamp:     1647677168
+   > account:             0x301F0CB7dC1b39D182588492128d5c7eAdb66d6f
+   > balance:             0.145694973615656808
+   > gas used:            2809800 (0x2adfc8)
+   > gas price:           5 gwei
+   > value sent:          0 ETH
+   > total cost:          0.014049 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:            0.014049 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.01542142 ETH
